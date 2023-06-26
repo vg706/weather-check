@@ -93,6 +93,30 @@ main {
     color: rgb(252, 164, 0);
 }
 
-.text-white > h2{
+/* .weather.loading {
+    visibility: hidden;
+}
+
+.weather.loading::after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+} */
+
+/* .text-white > h2 {
     font-size: 3rem;
+} */
+
+/* h3 {
+    font-size: 2rem;
+    font-weight: 100;
+} */
+
+.description-wrapper {
+    margin-bottom: 4rem;
+}
+
+.description {
+    text-transform: capitalize;
 }
