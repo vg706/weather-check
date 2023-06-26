@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-width: 520px;
+    /* overflow-y: hidden; */
+}
+
+main {
+    height: 100vh;
+    min-width: 500px;
+}
+
+/* .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.bg-image {
+    background-image: url(./images/weather-page2.jpg);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+
+.main-header-container {
+    background-color: #7DD6FA;
+}
+
+.header-main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 144rem;
+    padding: 2rem;
+}
+
+.return-button {
+    width: 8rem;
+    height: 5rem;
+}
+
+.title-text {
+    display: flex;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.title-text > h1 {
+    font-size: 3rem;
+}
+
+.main-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.mask {
+    background-color: rgba(36, 38, 38, 0.635);
+    display: flex;
+    align-items: center;
+    padding-bottom: 10rem;
+}
+
+.mask-custom {
+    height: 50rem;
+    width: 55rem;
+    background: linear-gradient(
+        45deg,
+        hsla(33, 85%, 52%, 0.4),
+        hsla(231, 88%, 45%, 0.4)
+    );
+    backdrop-filter: blur(15px);
+    border-radius: 1rem;
+    border: 0.3rem solid rgba(255, 255, 255, 0.4);
+    background-clip: padding-box;
+    padding: 4rem;
+}
+
+.wrapper-search {
+    /* width: fit-content; */
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.form-outline {
+    /* width: 100%; */
+    height: 10%;
+}
+
+#search-addon {
+    color: black;
+}
+
+.fa-search {
+    color: crimson;
+}
+
+/* .text-search {
+    font-size: 4rem;
+    font-weight: bold;
+} */
+
+/* .input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+} */
+
+/* .input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+} */
+
+/* .form-outline {
+    width: 50%;
+} */
