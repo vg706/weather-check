@@ -36,21 +36,26 @@
                 <div class="mask h-100">
                     <div class="main-search container">
                         <div class="mask-custom">
-                            <div class="card-body h-100 d-flex">
-                                <div class="wrapper-search d-flex w-100">
-                                    <div class="search-container w-100">
-                                        <label for="form1" class="form-label fs-2">Cidade</label>
-                                            <div class="form-floating d-flex mb-3">
-                                                <input type="search" class="form-control border-end-0 " id="form1" placeholder="Pesquisar"
-                                                    aria-describedby="search-addon" />
-                                                <label for="form1">Pesquisar</label>
-                                                <span class="input-group-text border-0" id="search-addon">
-                                                    <i class="fas fa-search"></i>
-                                                </span>
-                                            </div>
+                            <div class="card-body">
+                                <div class="search-section m-5">
+                                    <h1 class="text-white">Cidade:</h1>
+                                    <div class="wrapper-search d-flex justify-content-center">
+                                        <div class="input-group w-75 mt-4 mb-4" id="search-container">
+                                            <input type="search" class="form-control me-2" placeholder="Pesquisar"
+                                                aria-label="Pesquisar" aria-describedby="basic-addon2">
+                                            <button class="btn" id="basic-addon2"><i class="fas fa-search"></i></button>
+                                        </div>
                                     </div>
                                 </div>
-                                
+                                <div class="weather-info">
+                                    <div class="city-info d-flex justify-content-center text-white">
+                                        <h2 class="mt-2">Clima em Fortaleza</h2>
+                                    </div>
+                                    <div class="temperature-info m-5 pb-4 text-white"><h2>50°C</h2></div>
+                                    <div class="time-info m-5 text-white"><h3>Chuvoso</h3></div>
+                                    <div class="humidity-info m-5 text-white"><h3>Umidade: 50%</h3></div>
+                                    <div class="wind-info m-5 text-white"><h3>Velocidade do vento: 3.2km/h</h3></div>
+                                </div>                                
                             </div>
                         </div>
                     </div>

@@ -9,23 +9,16 @@ html {
 }
 
 body {
-    min-width: 520px;
-    /* overflow-y: hidden; */
+    min-width: 300px;
+    overflow-y: hidden;
 }
 
 main {
     height: 100vh;
-    min-width: 500px;
 }
 
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
-
 .bg-image {
-    background-image: url(./images/weather-page2.jpg);
+    background-image: url(./images/weather-page.jpg);
     max-width: 100%;
     background-size: cover;
     background-position: center;
@@ -64,14 +57,14 @@ main {
 .main-search {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 10rem;
 }
  
 .mask {
     background-color: rgba(36, 38, 38, 0.635);
     display: flex;
     align-items: center;
-    padding-bottom: 10rem;
+    justify-content: center;
 }
 
 .mask-custom {
@@ -86,48 +79,20 @@ main {
     border-radius: 1rem;
     border: 0.3rem solid rgba(255, 255, 255, 0.4);
     background-clip: padding-box;
-    padding: 4rem;
 }
 
-.wrapper-search {
-    /* width: fit-content; */
-    justify-content: space-between;
+.search-section > h1 {
+    font-size: 3rem;
+}
+
+#search-container {
     height: fit-content;
 }
 
-.form-outline {
-    /* width: 100%; */
-    height: 10%;
-}
-
-#search-addon {
-    color: black;
-}
-
 .fa-search {
-    color: crimson;
+    color: rgb(252, 164, 0);
 }
 
-/* .text-search {
-    font-size: 4rem;
-    font-weight: bold;
-} */
-
-/* .input-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-} */
-
-/* .input-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 10%;
-} */
-
-/* .form-outline {
-    width: 50%;
-} */
+.text-white > h2{
+    font-size: 3rem;
+}
