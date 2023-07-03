@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 html {
@@ -10,7 +13,6 @@ html {
 
 body {
     min-width: 300px;
-    overflow-y: hidden;
 }
 
 main {
@@ -42,11 +44,15 @@ main {
     height: 5rem;
 }
 
+#button-text {
+    font-size: 1.7rem;
+}
+
 .title-text {
     display: flex;
-    width: 85%;
+    width: 100%;
+    margin-right: 10%;
     justify-content: center;
-    align-items: center;
     white-space: nowrap;
 }
 
@@ -70,6 +76,7 @@ main {
 .mask-custom {
     height: 50rem;
     width: 55rem;
+    position: relative;
     background: linear-gradient(
         45deg,
         hsla(33, 85%, 52%, 0.4),
@@ -90,9 +97,62 @@ main {
 }
 
 .fa-search {
+    font-size: 2rem;
     color: rgb(252, 164, 0);
 }
 
-.text-white > h2{
+.weather.loading {
+    visibility: hidden;
+    max-width: 20px;
+    position: relative;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Carregando...";
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.text-white > h2 {
     font-size: 3rem;
+}
+
+.description-wrapper {
+    margin-bottom: 4rem;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+.icon {
+    font-size: 1.5em;
+    color: rgb(39, 52, 95);
+}
+
+.icon > i {
+    color: rgb(252, 164, 0);
+}
+
+.footer-main-container {
+    width: 100%;
+    padding: 3%;
+    background: #7db7fa;
+}
+
+.footer-container {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-small-text {
+    font-size: 1.9rem;
+    color: black;
+}
+
+.main-logo {
+    text-decoration: none;
 }

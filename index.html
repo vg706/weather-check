@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
+        <script src="./script.js" defer></script>
         <title>insta-clima</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css"
@@ -22,10 +23,10 @@
     </head>
     <body>
         <header class="main-header-container">
-            <div class="header-main">
-                <a href="/">
+            <div class="container-fluid header-main">
+                <a href="../portfolio/portfolio.html">
                     <button class="btn btn-primary return-button" type="button">
-                        <h5>retornar</h5>
+                        <h5 id="button-text">Retornar</h5>
                     </button>
                 </a>
                 <div class="title-text"><h1>insta-clima</h1></div>
@@ -33,37 +34,56 @@
         </header>
         <main>
             <div class="bg-image">
-                <div class="mask h-100">
-                    <div class="main-search container">
+                <div class="mask w-100 h-100">
+                    <div class="container-lg main-search">
                         <div class="mask-custom">
                             <div class="card-body">
                                 <div class="search-section m-5">
                                     <h1 class="text-white">Cidade:</h1>
                                     <div class="wrapper-search d-flex justify-content-center">
-                                        <div class="input-group w-75 mt-4 mb-4" id="search-container">
-                                            <input type="search" class="form-control me-2" placeholder="Pesquisar"
+                                        <div class="input-group search w-75 mt-4 mb-4" id="search-container">
+                                            <input type="search" class="form-control search-bar me-2" placeholder="Pesquisar"
                                                 aria-label="Pesquisar" aria-describedby="basic-addon2">
-                                            <button class="btn" id="basic-addon2"><i class="fas fa-search"></i></button>
+                                            <button class="btn btn-search" id="basic-addon2"><i class="fas fa-search"></i></button>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="weather-info">
-                                    <div class="city-info d-flex justify-content-center text-white">
-                                        <h2 class="mt-2">Clima em Fortaleza</h2>
+                                <div class="weather loading">
+                                    <div class="d-flex justify-content-center text-white">
+                                        <h2 class="city"></h2>
                                     </div>
-                                    <div class="temperature-info m-5 pb-4 text-white"><h2>50°C</h2></div>
-                                    <div class="time-info m-5 text-white"><h3>Chuvoso</h3></div>
-                                    <div class="humidity-info m-5 text-white"><h3>Umidade: 50%</h3></div>
-                                    <div class="wind-info m-5 text-white"><h3>Velocidade do vento: 3.2km/h</h3></div>
-                                </div>                                
+                                    <div class="text-white m-5"><h2 class="temperature"></h2></div>
+                                    <div class="description-wrapper d-flex ms-4 align-items-center">
+                                        <img src="https://openweathermap.org/img/wn/04n.png" class="icon" alt="weather-description-icon">
+                                        <div class="text-white ms-2">
+                                            <h3 class="description"></h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-white m-5"><h3 class="humidity"></h3></div>
+                                    <div class="text-white m-5"><h3 class="wind"></h3></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        <!-- <footer class="main-footer-container">
-        </footer> -->
+        <footer class="footer-main-container">
+            <div class="container footer-container d-flex">
+                <div class="footer-logo">
+                    <a href="../portfolio/portfolio.html" class="main-logo">
+                        <span class="footer-small-text">WebinVision Sistemas de Informática S.A</span>
+                    </a>
+                </div>
+                <div class="footer-links-socialmedia">
+                    <h3 class="footer-small-text">Nos siga nas redes sociais:</h3>
+                    <a href="https://github.com/WebinVision" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/zuck/?locale=pt_BR" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+                    <a href="https://youtu.be/yEiQWxg0h5s" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://open.spotify.com/track/3gTd9RZ8N3BLEioj0wD5TD?si=581c2bc2a5e841f9" target="_blank" class="icon"><i class="fab fa-spotify"></i></a>
+                </div>
+            </div>
+        </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
