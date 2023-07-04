@@ -22,68 +22,65 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     </head>
     <body>
-        <header class="main-header-container">
-            <div class="container-fluid header-main">
-                <a href="../portfolio/portfolio.html">
-                    <button class="btn btn-primary return-button" type="button">
-                        <h5 id="button-text">Retornar</h5>
-                    </button>
-                </a>
-                <div class="title-text"><h1>insta-clima</h1></div>
-            </div>
-        </header>
-        <main>
-            <div class="bg-image">
-                <div class="mask w-100 h-100">
-                    <div class="container-lg main-search">
-                        <div class="mask-custom">
-                            <div class="card-body">
-                                <div class="search-section m-5">
-                                    <h1 class="text-white">Cidade:</h1>
-                                    <div class="wrapper-search d-flex justify-content-center">
-                                        <div class="input-group search w-75 mt-4 mb-4" id="search-container">
-                                            <input type="search" class="form-control search-bar me-2" placeholder="Pesquisar"
-                                                aria-label="Pesquisar" aria-describedby="basic-addon2">
-                                            <button class="btn btn-search" id="basic-addon2"><i class="fas fa-search"></i></button>
+        <div id="grid-container">
+            <header id="main-header-container">
+                <!-- <div class="container-fluid header-main">
+                    <div class="title-text"><h1>insta-clima</h1></div>
+                </div> -->
+            </header>
+            <!-- <main id="content-main">
+                <div class="bg-image">
+                    <div class="mask">
+                        <div class="main-search">
+                            <div class="mask-custom">
+                                <div class="card-body">
+                                    <div class="search-section m-5">
+                                        <h1 class="text-white">Cidade:</h1>
+                                        <div class="wrapper-search d-flex justify-content-center">
+                                            <div class="input-group search w-75 mt-4 mb-4" id="search-container">
+                                                <input type="search" class="form-control search-bar me-2" placeholder="Pesquisar"
+                                                    aria-label="Pesquisar" aria-describedby="basic-addon2">
+                                                <button class="btn btn-search" id="basic-addon2"><i class="fas fa-search"></i></button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="weather loading">
-                                    <div class="d-flex justify-content-center text-white">
-                                        <h2 class="city"></h2>
-                                    </div>
-                                    <div class="text-white m-5"><h2 class="temperature"></h2></div>
-                                    <div class="description-wrapper d-flex ms-4 align-items-center">
-                                        <img src="https://openweathermap.org/img/wn/04n.png" class="icon" alt="weather-description-icon">
-                                        <div class="text-white ms-2">
-                                            <h3 class="description"></h3>
+                                    <div class="weather loading">
+                                        <div class="d-flex justify-content-center text-white">
+                                            <h2 class="city"></h2>
                                         </div>
+                                        <div class="text-white m-5"><h2 class="temperature"></h2></div>
+                                        <div class="description-wrapper d-flex ms-4 align-items-center">
+                                            <img src="https://openweathermap.org/img/wn/04n.png" class="icon" alt="weather-description-icon">
+                                            <div class="text-white ms-2">
+                                                <h3 class="description"></h3>
+                                            </div>
+                                        </div>
+                                        <div class="text-white m-5"><h3 class="humidity"></h3></div>
+                                        <div class="text-white m-5"><h3 class="wind"></h3></div>
                                     </div>
-                                    <div class="text-white m-5"><h3 class="humidity"></h3></div>
-                                    <div class="text-white m-5"><h3 class="wind"></h3></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </main>
-        <footer class="footer-main-container">
-            <div class="container footer-container d-flex">
-                <div class="footer-logo">
-                    <a href="../portfolio/portfolio.html" class="main-logo">
-                        <span class="footer-small-text">WebinVision Sistemas de Informática S.A</span>
-                    </a>
+            </main>
+            <footer class="footer-main-container">
+                <div class="container footer-container d-flex">
+                    <div class="footer-logo">
+                        <a href="../portfolio/portfolio.html" class="main-logo">
+                            <span class="footer-small-text">WebinVision Sistemas de Informática S.A</span>
+                        </a>
+                    </div>
+                    <div class="footer-links-socialmedia">
+                        <h3 class="footer-small-text">Nos siga nas redes sociais:</h3>
+                        <a href="https://github.com/WebinVision" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/zuck/?locale=pt_BR" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
+                        <a href="https://youtu.be/yEiQWxg0h5s" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
+                        <a href="https://open.spotify.com/track/3gTd9RZ8N3BLEioj0wD5TD?si=581c2bc2a5e841f9" target="_blank" class="icon"><i class="fab fa-spotify"></i></a>
+                    </div>
                 </div>
-                <div class="footer-links-socialmedia">
-                    <h3 class="footer-small-text">Nos siga nas redes sociais:</h3>
-                    <a href="https://github.com/WebinVision" target="_blank" class="icon"><i class="fab fa-github"></i></a>
-                    <a href="https://www.facebook.com/zuck/?locale=pt_BR" target="_blank" class="icon"><i class="fab fa-facebook"></i></a>
-                    <a href="https://youtu.be/yEiQWxg0h5s" target="_blank" class="icon"><i class="fab fa-youtube"></i></a>
-                    <a href="https://open.spotify.com/track/3gTd9RZ8N3BLEioj0wD5TD?si=581c2bc2a5e841f9" target="_blank" class="icon"><i class="fab fa-spotify"></i></a>
-                </div>
-            </div>
-        </footer>
+            </footer> -->
+        </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
             integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
         </script>
