@@ -11,28 +11,22 @@ html {
     font-size: 62.5%;
 }
 
-body {
-    min-width: 300px;
-}
-
 .grid-container {
     display: grid;
-    grid-template-columns: minmax(50px, 1fr) minmax(400px, 3fr) minmax(50px, 1fr);
-    grid-template-rows: minmax(80px, 1fr) minmax(400px, 3fr) minmax(90px, 1fr);
-    /* height: 100vh; */
+    grid-template-columns: minmax(25%, 1fr) minmax(50%, 2fr) minmax(25%, 1fr);
+    grid-template-rows: minmax(10%, 2fr) minmax(80%, 2fr) minmax(15%, 2fr);
 }
 
 #main-header-container {
     background-color: #7DD6FA;
     grid-area: 1 / 1 / 2 / 4;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-main {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 144rem;
 }
 
 .title-text > h1 {
@@ -41,7 +35,6 @@ body {
 
 #content-main {
     grid-area: 2 / 1 / 3 / 4;
-    background: green;
 }
 
 .bg-image {
@@ -61,7 +54,8 @@ body {
 }
 
 .mask-custom {
-    max-width: 64rem;
+    width: 40%;
+    min-width: 30rem;
     position: relative;
     background: linear-gradient(
         45deg,
@@ -72,6 +66,12 @@ body {
     border-radius: 1rem;
     border: 0.3rem solid rgba(255, 255, 255, 0.4);
     background-clip: padding-box;
+}
+
+@media (max-width: 300px) {
+    .mask-custom {
+        min-width: 27rem;
+    }
 }
 
 .search-section > h1 {
@@ -127,7 +127,6 @@ body {
     grid-area: 3 / 1 / 4 / 4;
     background: #7db7fa;
 }
-
 
 .footer-container {
     justify-content: space-between;
