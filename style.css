@@ -14,7 +14,9 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: minmax(25%, 1fr) minmax(50%, 2fr) minmax(25%, 1fr);
-    grid-template-rows: minmax(10%, 2fr) minmax(80%, 2fr) minmax(15%, 2fr);
+    grid-template-rows: minmax(5%, 2fr) minmax(80%, 3fr) minmax(15%, 2fr);
+    height: 100vh;
+    /* min-height: 700px; */
 }
 
 #main-header-container {
@@ -49,6 +51,20 @@ html {
     justify-content: center;
 }
 
+@media (max-height: 750px) {
+    .main-search {
+        height: 40rem;
+    }
+
+    .wrapper-search {
+        height: 20rem;
+    }
+
+    .weather { 
+        flex-flow: wrap!important;
+    }
+}
+
 .mask {
     background-color: rgba(36, 38, 38, 0.635);
 }
@@ -56,6 +72,8 @@ html {
 .mask-custom {
     width: 40%;
     min-width: 30rem;
+    display: flex;
+    flex-flow: column;
     position: relative;
     background: linear-gradient(
         45deg,
@@ -74,17 +92,28 @@ html {
     }
 }
 
-.search-section > h1 {
-    font-size: 3rem;
+.wrapper-search {
+    flex-flow: column wrap;
 }
 
-#search-container {
-    height: fit-content;
+.search-area {
+    align-self: center;
+    padding-left: 5rem;
+    padding-right: 3rem;
+}
+
+.search-section > h1 {
+    font-size: 3rem;
 }
 
 .fa-search {
     font-size: 2rem;
     color: rgb(252, 164, 0);
+}
+
+.weather {
+    display: flex;
+    flex-flow: column;
 }
 
 .weather.loading {
@@ -101,13 +130,20 @@ html {
     top: 0;
 }
 
+.city {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
 .text-white > h2 {
     font-size: 3rem;
 }
 
-.description-wrapper {
+/* .description-wrapper {
     margin-bottom: 4rem;
-}
+} */
 
 .description {
     text-transform: capitalize;
