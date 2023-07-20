@@ -73,7 +73,7 @@ html {
     background-clip: padding-box;
 }
 
-@media (max-width: 941px), (max-height: 475px) {
+@media (max-width: 941px){
     .main-search {
         max-width: 90%;
         max-height: 90%;
