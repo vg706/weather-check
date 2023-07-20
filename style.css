@@ -16,7 +16,7 @@ html {
     grid-template-columns: minmax(25%, 1fr) minmax(50%, 2fr) minmax(25%, 1fr);
     grid-template-rows: minmax(10%, 2fr) minmax(85%, 3fr) minmax(15%, 2fr);
     min-width: 301px;
-    min-height: 545px;
+    min-height: 540px;
     height: 100vh;
 }
 
