@@ -14,8 +14,10 @@ html {
 .grid-container {
     display: grid;
     grid-template-columns: minmax(25%, 1fr) minmax(50%, 2fr) minmax(25%, 1fr);
-    grid-template-rows: minmax(5%, 2fr) minmax(80%, 3fr) minmax(15%, 2fr);
-    min-width: 200px;
+    grid-template-rows: minmax(10%, 2fr) minmax(85%, 3fr) minmax(15%, 2fr);
+    min-width: 301px;
+    min-height: 545px;
+    height: 100vh;
 }
 
 #main-header-container {
@@ -71,10 +73,12 @@ html {
     background-clip: padding-box;
 }
 
-@media (max-width: 561px) {
+@media (max-width: 941px), (max-height: 475px) {
     .main-search {
         max-width: 90%;
+        max-height: 90%;
     }
+
 }
 
 .mask-custom {
